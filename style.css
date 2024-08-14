@@ -274,7 +274,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 57%;}
+    100%{width: 50%;}
 }
 
 .skills .skill .htmlcss{
@@ -283,7 +283,7 @@ html{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 79%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .hirent{
@@ -301,7 +301,7 @@ html{
 }
 @keyframes comunicacion{
     0%{width: 0%;}
-    100%{width: 78%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .trabajo{
@@ -310,7 +310,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .creatividad{
@@ -328,7 +328,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 90%;}
 }
 /*SECCION CURRICULUM*/
 .curriculum{
