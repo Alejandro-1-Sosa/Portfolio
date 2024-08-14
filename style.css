@@ -286,13 +286,13 @@ html{
     100%{width: 80%;}
 }
 
-.skills .skill .hirent{
+.skills .skill .phyton{
     width: 0%;
-    animation: 2s hirent forwards;
+    animation: 2s phyton forwards;
 }
-@keyframes hirent {
+@keyframes phyton {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 45%;}
 }
 
 .skills .skill .comunicacion{
