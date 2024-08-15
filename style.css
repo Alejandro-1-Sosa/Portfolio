@@ -628,13 +628,14 @@ footer .arriba{
         right: 0;
         top: 75px;
         background-color: #252A2E;
+        border-radius: 10px;
         width: 180px;
     }
     nav.responsive ul{
         display: block !important;
     }
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #1CB698;
         padding: 10px 0;
     }
 }

@@ -15,6 +15,7 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
+
 //Funcion que aplica las animaciones de las habilidades
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
@@ -23,7 +24,7 @@ function efectoHabilidades(){
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javascript");
         habilidades[1].classList.add("htmlcss");
-        habilidades[2].classList.add("hirent");
+        habilidades[2].classList.add("phyton");
         habilidades[3].classList.add("comunicacion");
         habilidades[4].classList.add("trabajo");
         habilidades[5].classList.add("creatividad");
