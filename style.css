@@ -51,7 +51,7 @@ html{
 }
 .nav-responsive{
     background-color: #1cb698;
-    color: #fff;
+    color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -93,7 +93,7 @@ html{
     font-weight: normal;
 }
 .inicio .contenido-banner .redes a{
-    color: #fff;
+    color: #ffffff;
     display: inline-block;
     text-decoration: none;
     border: 1px solid #fff;
