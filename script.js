@@ -38,3 +38,26 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+const form = document.getElementById('form-contacto');
+
+form.addEventListener('submit',function (e) {
+    e.preventDefault(); // evita que recargue la página
+
+    const datos = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: datos,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Mensaje enviado correctamente.');
+            form.reset();
+        } else {
+            alert('Hubo un error. Intenta nuevamente.');
+        }
+    });
+});

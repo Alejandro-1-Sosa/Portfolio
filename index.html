@@ -367,16 +367,23 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                <div class="col" id="alerta">
+                    <form id="form-contacto" action="https://formsubmit.co/sosaa9302@gmail.com" method="post">
+                        <input type="text" name="Nombre" placeholder="Tú Nombre" required>
+                        <input type="text" name="Telefono" placeholder="Número telefónico">
+                        <input type="text" name="Email"  placeholder="Dirección de correo" required>
+                        <input type="text" name="Tema" placeholder="Tema">
+                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5502/index.html">
+                        
+                        
+                        <button>
+                         Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                         <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
            </div>
         </div>
