@@ -391,6 +391,11 @@ html{
     color: #1cb698;
     margin-bottom: 10px;
 }
+.curriculum .fila .item .agradecimiento{
+    display: block;
+    color: #1cb698;
+    margin-bottom: 10px;
+}
 .curriculum .fila .item p{
     line-height: 24px;
 }
