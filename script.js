@@ -41,22 +41,30 @@ window.onscroll = function(){
 
 // Muestra una alerta y envia un mensaje al presionar el botón de Enviar 
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const form = document.getElementById('form-contacto');
+
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
+  wrapper.innerHTML = `
+    <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  `;
 
+  alertPlaceholder.innerHTML = ""; // Limpia alertas anteriores
   alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('Nice, you triggered this alert message!', 'success')
-  })
-}
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita que la página se recargue
 
+  appendAlert('✅ Mensaje enviado correctamente.','success');
+
+  // Envía el formulario manualmente a formsubmit.co
+  form.submit();
+})
+
+function mostrarMensaje() {
+  window.alert("¡Tu mensaje ha sido enviado con éxito!"); // Este es el mensaje que se mostrará
+}
