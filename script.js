@@ -56,15 +56,6 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Evita que la página se recargue
-
-  appendAlert('✅ Mensaje enviado correctamente.','success');
-
-  // Envía el formulario manualmente a formsubmit.co
-  form.submit();
-})
-
 function mostrarMensaje() {
   window.alert("¡Tu mensaje ha sido enviado con éxito!"); // Este es el mensaje que se mostrará
 }
